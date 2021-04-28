@@ -1,0 +1,32 @@
+{% extends 'template-with-menu.html' %}
+
+{% load static %}
+
+{% block title %}
+    <title>index</title>
+{% endblock %}
+
+{% block ul-content %}
+    <li><a href="{% url 'index' %}">Home</a></li>
+    <li><a href="{% url 'login' %}">Login</a></li>
+    <li><a href="{% url 'register' %}">Cadastrar</a></li>
+{% endblock %}
+
+{% block article-content %}
+    <ul class="main-article-ul">
+        <li>Hilquias Abias Figueiredo Silva</li>
+        <li>hilquias.dev@gmail.com</li>
+        <li>https://github.com/Hilquias-Abias</li>
+        <li>https://www.linkedin.com/in/hilquias-abias-823019190/</li>
+    </ul>
+{% endblock %}
+
+{% block footer-content %}
+    <section class="section-footer">
+        <address  class="footer-content">Hilquias Abias</address>
+    </section>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'js/index.js' %}"></script>
+{% endblock %}

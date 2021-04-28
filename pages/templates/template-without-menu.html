@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hilquias Abias">
+    <meta name="description" content="Teste prático – Projeto em Django">
+    <meta name="keywords" content="E-Soft Sistemas Ltda, Python Trainee">
+    <link rel="stylesheet" href="{% static 'css/template-without-menu.css' %}">
+    {% block title %}
+    {% endblock %}
+</head>
+<body>
+    <main>
+        <article class="main-article">
+            {% block article-content %}
+            {% endblock %}
+        </article>
+    </main>
+
+    {% block script %}
+    {% endblock %}
+</body>
+</html>

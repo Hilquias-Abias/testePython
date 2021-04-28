@@ -1,0 +1,72 @@
+:root {
+    --primary-color: rgb(83, 192, 156);
+    --second-color: rgb(226, 229, 228);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--second-color);
+}
+
+.main-article {
+    background-color: var(--primary-color);
+    max-width: 600px;
+    height: 400px;
+    margin: 123px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 5px 0 black;
+    border-radius: 10px;
+}
+
+/* register */
+
+.form-register {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-register input {
+    margin: 8px;
+    padding: 5px;
+    width: 230px;
+}
+
+.form-register button {
+    width: 150px;
+    padding: 5px;
+    margin: 20px 100px;
+}
+
+/* register */
+
+/* login */
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-login input {
+    padding: 5px;
+    margin-bottom: 15px;
+    width: 300px;
+}
+
+.form-login button {
+    width: 150px;
+    padding: 10px;
+    margin: 15px auto;
+}
+
+/* login */
+
+
+

@@ -1,0 +1,37 @@
+{% extends 'template-without-menu.html' %}
+
+{% load static %}
+
+{% block title %}
+    <title>cadastro</title>
+{% endblock %}
+
+{% block article-content %}
+    <form action="" method="post" class="form-register">
+
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <!-- <fieldset>
+            <legend>Cadastro</legend>
+            <input type="text" placeholder="Nome..." id="name">
+            <input type="email" placeholder="E-mail..." id="email">
+            <input type="password" placeholder="Senha..." id="password">
+            <input type="password" placeholder="Confirme a senha..." id="confirm-password">
+            <input type="text" placeholder="CEP..." id="cep">
+            <input type="text" placeholder="Endereço..." id="address">
+            <input type="text" placeholder="Número..." id="number">
+            <input type="text" placeholder="Complemento..." id="complement">
+            <input type="text" placeholder="Bairro..." id="district">
+            <input type="text" placeholder="Cidade..." id="city">
+            <input type="text" placeholder="Estado..." id="state">
+        </fieldset> -->
+        <a href="{% url 'login' %}">Fazer Login</a>
+        <button type="submit">Cadastrar</button>
+    </form>
+{% endblock %}
+
+{% block script %}
+
+{% endblock %}

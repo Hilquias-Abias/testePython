@@ -1,0 +1,15 @@
+{% extends 'template-with-menu.html' %}
+
+{% load static %}
+
+{% block title %}
+    <title>home</title>
+{% endblock %}
+
+{% block ul-content %}
+    <ul class="ul-menu">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'products' %}">Produtos</a></li>
+        <li><a href="">Sair</a></li>
+    </ul>
+{% endblock %}
